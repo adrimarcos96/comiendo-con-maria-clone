@@ -2,7 +2,7 @@
 </script>
 
 <template>
-    footer
+    Team diet plan
 </template>
 
 <style scoped>
