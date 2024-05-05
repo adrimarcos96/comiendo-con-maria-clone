@@ -10,7 +10,8 @@ export default {
         primary: '#84a212',
         secondary: '#a32a2a',
         tertiary: '#222222',
-        accent: '#87a32b'
+        accent: '#87a32b',
+        'dark-grey': '#575760'
       },
       fontFamily: {
         body: ['sans-serif']

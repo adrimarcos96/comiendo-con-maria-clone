@@ -4,12 +4,9 @@ import { MagnifyingGlassIcon, Bars3Icon, XMarkIcon } from '@heroicons/vue/24/sol
 import { useHeaderSearchFormStore } from '@/stores/headerSearchForm'
 import SearchFormDesktopComponent from './SearchFormDesktopComponent.vue'
 import SearchFormMobileComponent from './SearchFormMobileComponent .vue'
-interface NavOption {
-  label: string
-  url: string
-}
+import type { NavigationOption } from '@/models/navigationOption.interface'
 
-const navOptions: NavOption[] = [
+const navOptions: NavigationOption[] = [
   {
     label: 'Cursos',
     url: '#'
