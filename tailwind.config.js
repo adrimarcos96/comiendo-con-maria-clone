@@ -2,7 +2,7 @@
 export default {
   content: [
     './index.html',
-    './src/**/*.{vue,js,ts,jsx,tsx}',
+    './src/**/*.{vue,js,ts,jsx,tsx}'
   ],
   theme: {
     extend: {
@@ -20,7 +20,7 @@ export default {
         xs: '420px',
         md: '769px'
       }
-    },
+    }
   },
-  plugins: [],
+  plugins: []
 }

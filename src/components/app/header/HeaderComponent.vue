@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onMounted, ref } from 'vue'
+import { ref } from 'vue'
 import { MagnifyingGlassIcon, Bars3Icon, XMarkIcon } from '@heroicons/vue/24/solid'
 import { useHeaderSearchFormStore } from '@/stores/headerSearchForm'
 import SearchFormDesktopComponent from './SearchFormDesktopComponent.vue'
@@ -34,10 +34,6 @@ const searchFromStore = useHeaderSearchFormStore()
 const navOptionsDesktopRef = ref<HTMLElement>()
 const showMobileNavLinks = ref<boolean>(false)
 const showSearchForm = ref<boolean>(false)
-
-onMounted(() => {
-  console.log('width:', navOptionsDesktopRef.value?.clientWidth)
-})
 
 const handleClickMobileNavIcon = () => {
   showSearchForm.value = false
@@ -75,7 +71,7 @@ const handleChangeSearchValue = (searchValue: string) => {
           <div ref="navOptionsDesktopRef" class="flex flex-row items-center">
             <!-- Navigation bar for desktop -->
             <div class="h-[60px] flex flex-row items-center max-md:hidden">
-              <template v-for="option in navOptions">
+              <template v-for="(option, index) in navOptions" :key="`nav-link-desktop-${index}`">
                 <RouterLink :to="option.url" class="h-full px-5 flex items-center font-body text-[15px] justify-center text-tertiary hover:text-primary">
                   {{ option.label }}
                 </RouterLink>
@@ -133,7 +129,7 @@ const handleChangeSearchValue = (searchValue: string) => {
         class="flex flex-col bg-[#00000005]"
         v-if="showMobileNavLinks"
       >
-        <template v-for="option in navOptions">
+        <template v-for="(option, index) in navOptions" :key="`nav-link-mobile-${index}`">
           <RouterLink :to="option.url" class="h-[60px] px-5 flex items-center font-body text-[15px] justify-start text-tertiary hover:text-primary">
             {{ option.label }}
           </RouterLink>
