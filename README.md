@@ -2,17 +2,12 @@
 
 A copy of the page https://www.comiendoconmaria.com/plan-dietetico-equipo/
 
-## Recommended IDE Setup
+## Demo
+| Dessktop | Mobile |
+| -------- | ------ |
+| ![Plan-dietético-Comiendo-con-María-desktop](https://github.com/adrimarcos96/comiendo-con-maria-clone/assets/101882626/7fedf092-102c-46d3-b51d-f33f393a3a72) | ![Plan-dietético-Comiendo-con-María-mobile](https://github.com/adrimarcos96/comiendo-con-maria-clone/assets/101882626/8093ec07-9663-4d8b-a4ab-25dd209a205e) |
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
 
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
 
 ## Project Setup
 
