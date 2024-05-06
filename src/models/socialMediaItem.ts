@@ -3,3 +3,7 @@ export interface SocialMediaItem {
   icon: string
   url: string
 }
+
+export interface SocialMediaItemFill extends SocialMediaItem {
+  backgroundColor: string
+}

@@ -9,7 +9,7 @@ const emits = defineEmits<{
   'change-search-value': [value: string]
 }>()
 
-const handleChangeSearchInput = (value: string) => {
+const handleChangeSearchInput = (value: string): void => {
   searchFromStore.setSearchInputValue(value)
   emits('change-search-value', value)
 }

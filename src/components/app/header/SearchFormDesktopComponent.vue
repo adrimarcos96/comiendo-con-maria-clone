@@ -11,14 +11,14 @@ const emits = defineEmits<{
   'change-search-value': [value: string],
 }>()
 
-const handleCloseButtonClick = (event: Event) => {
+const handleCloseButtonClick = (event: Event): void => {
   event.preventDefault()
 
   searchFromStore.clearSearchInputValue()
   emits('close-search-form')
 }
 
-const handleChangeSearchInput = (value: string) => {
+const handleChangeSearchInput = (value: string): void => {
   searchFromStore.setSearchInputValue(value)
   emits('change-search-value', value)
 }

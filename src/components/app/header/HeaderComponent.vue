@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { MagnifyingGlassIcon, Bars3Icon, XMarkIcon } from '@heroicons/vue/24/solid'
+import type { NavigationOption } from '@/models/navigationOption.interface'
 import { useHeaderSearchFormStore } from '@/stores/headerSearchForm'
 import SearchFormDesktopComponent from './SearchFormDesktopComponent.vue'
 import SearchFormMobileComponent from './SearchFormMobileComponent .vue'
-import type { NavigationOption } from '@/models/navigationOption.interface'
 
 const navOptions: NavigationOption[] = [
   {
@@ -35,12 +35,12 @@ const navOptionsDesktopRef = ref<HTMLElement>()
 const showMobileNavLinks = ref<boolean>(false)
 const showSearchForm = ref<boolean>(false)
 
-const handleClickMobileNavIcon = () => {
+const handleClickMobileNavIcon = (): void => {
   showSearchForm.value = false
   showMobileNavLinks.value = !showMobileNavLinks.value
 }
 
-const handleClickSearchIcon = () => {
+const handleClickSearchIcon = (): void => {
   showMobileNavLinks.value = false
   const newValue = !showSearchForm.value
 
@@ -51,9 +51,11 @@ const handleClickSearchIcon = () => {
   showSearchForm.value = newValue
 }
 
-const handleCloseSearchForm = () => showSearchForm.value = false
+const handleCloseSearchForm = (): void => {
+  showSearchForm.value = false
+}
 
-const handleChangeSearchValue = (searchValue: string) => {
+const handleChangeSearchValue = (searchValue: string): void => {
   console.log(`Searching by keyword: ${searchValue}`)
 }
 </script>

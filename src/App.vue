@@ -7,7 +7,7 @@ import FooterComponent from '@/components/app/FooterComponent.vue'
   <div class="w-full min-h-screen h-screen bg-white flex flex-col">
     <HeaderComponent />
 
-    <main id="content" class="grow bg-secondary">
+    <main id="content" class="grow">
       <router-view />
     </main>
 
@@ -15,5 +15,5 @@ import FooterComponent from '@/components/app/FooterComponent.vue'
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="css">
 </style>
