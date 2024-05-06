@@ -55,7 +55,7 @@ const socialMediaList: SocialMediaItem[] = [
 
     <!-- Social media section -->
     <div id="footer-social-media" class="flex flex-wrap justify-center items-center gap-4 mb-9">
-      <div v-for="(socialMedia, index) in socialMediaList">
+      <div v-for="(socialMedia, index) in socialMediaList" :key="`footer-social-media-${index}`">
         <a
           :key="`social-media-${index}`"
           :href="socialMedia.url"

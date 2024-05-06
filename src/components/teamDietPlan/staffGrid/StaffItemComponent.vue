@@ -14,7 +14,11 @@ const handleClickReserveButton = (): void => {
     <div class="w-full mb-[23px]">
       <div class="w-full flex flex-col items-center mb-[25px]">
         <div class="image-container w-full h-[150px] flex flex-row justify-center items-center">
-          <img :src="imageUrl" :alt="name" class="rounded-full h-full">
+          <img
+            :src="imageUrl"
+            :alt="name"
+            class="rounded-full h-full"
+          />
         </div>
 
         <span class="worker-name font-body text-[26px] text-tertiary">{{ name }}</span>
@@ -39,7 +43,11 @@ const handleClickReserveButton = (): void => {
     </div>
 
     <div class="actions w-full flex flex-row justify-center mb-[15px]">
-      <button v-if="isReserved" disabled class="flex flex-row justify-center bg-secondary text-white text-[25px] font-body rounded-[50px] py-[15px] px-5">
+      <button
+        v-if="isReserved"
+        disabled
+        class="flex flex-row justify-center bg-secondary text-white text-[25px] font-body rounded-[50px] py-[15px] px-5"
+      >
         Agenda completa
       </button>
       <button
@@ -52,7 +60,11 @@ const handleClickReserveButton = (): void => {
     </div>
 
     <div class="item-footer w-full flex flex-row justify-center items-center gap-3">
-      <div v-for="(contactMe, index) in contactMeLinks" class="flex flex-row justify-center items-center">
+      <div
+        v-for="(contactMe, index) in contactMeLinks"
+        :key="`worker-social-media-${index}`"
+        class="flex flex-row justify-center items-center"
+      >
         <a
           :key="`social-media-${index}`"
           :href="contactMe.url"

@@ -4,7 +4,7 @@ import StaffGridComponent from '@/components/teamDietPlan/staffGrid/StaffGridCom
 const descriptionTexts: string[] = [
   'Esta visita consiste en una entrevista para conocer al paciente y obtener toda la información necesaria sobre su historia clínica, dietética, rutinas, horarios, preferencias, aversiones, capacidades culinarias, objetivos… para poder proponer un tratamiento dietético 100% personalizado.',
   'El tratamiento dependerá de cada persona pero siempre cubre las necesidades expuestas y se adapta a cada paciente de forma personalizada.',
-  'Elige al dietista & nutricionista que se adapte mejor a tu objetivo.',
+  'Elige al dietista & nutricionista que se adapte mejor a tu objetivo.'
 ]
 </script>
 
