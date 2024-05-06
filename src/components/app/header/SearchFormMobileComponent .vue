@@ -21,7 +21,7 @@ const handleChangeSearchInput = (value: string): void => {
       id="search-input-mobile"
       type="text"
       :value="searchInputValue"
-      class="w-full h-[60px] font-normal font-body opacity-90 text-accent bg-[#f7f8f9] border-accent border-2 rounded-[4px] py-[10px] px-[15px]"
+      class="w-full h-[60px] font-normal font-body opacity-90 text-accent bg-[#f7f8f9] border-accent focus:outline-none focus:border-accent focus:ring-0 focus:ring-accent focus:shadow-sm border-2 rounded-[4px] py-[10px] px-[15px]"
       autocomplete="false"
       @input="event => handleChangeSearchInput(event.target?.value)"
     />

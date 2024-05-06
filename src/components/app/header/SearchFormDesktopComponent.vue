@@ -31,7 +31,7 @@ const handleChangeSearchInput = (value: string): void => {
         id="search-input-desktop"
         type="text"
         :value="searchInputValue"
-        class="w-full h-full font-normal font-body text-accent bg-[#f7f8f9] border-[#f7f8f9] ring-0 focus:border-[#f7f8f9] border-2 rounded-[4px] py-[10px] pl-[15px] pr-16"
+        class="w-full h-full font-normal font-body text-accent bg-[#f7f8f9] border-[#f7f8f9] focus:outline-none focus:border-[#f7f8f9] focus:ring-1 focus:ring-[#f7f8f9] border-2 rounded-[4px] py-[10px] pl-[15px] pr-16"
         autocomplete="false"
         @input="event => handleChangeSearchInput(event.target?.value)"
       />
